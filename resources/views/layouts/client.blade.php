@@ -28,7 +28,7 @@
 
             @if (Route::has('login'))
                 @auth
-                    <a class="p-2 text-dark" href="{{ url('/home') }}">Home</a>
+                    <span class="p-2 text-dark">{{ Auth::user()->name }}</span>
                 @else
                     <a class="p-2 text-dark" href="{{ route('login') }}">Login</a>
 
