@@ -48,6 +48,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $film->title }}</h5>
                                 <p class="card-text">
+                                    <b>Будет доступен: {{ $film->watch_soon_at->toDateString() }}</b>
+                                </p>
+                                <p class="card-text">
                                     {{ $film->description }}
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
